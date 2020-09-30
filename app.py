@@ -1,11 +1,14 @@
 from flask import Flask, request
 import subprocess
+import joblib 
+import os
 
 app = Flask(__name__)
 
 @app.route("/")
 def hello():
     return """
+    /* here the render template is missing please attach a new render template */
 <html>
 <body>
 Hi, enter a password to unlock the door
